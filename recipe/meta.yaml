@@ -1,6 +1,6 @@
 {% set name = "pywr" %}
-{% set version = "1.0.0" %}
-{% set sha256 = "fdaddaf772c128f6bcc61e937b18dfc0ae5f80c3a0bf592fac97dd6579cd002b" %}
+{% set version = "1.1.0" %}
+{% set sha256 = "f60b488f7cc42b1a780702c0f885f00eaa05b5e1756493e2c828189f6862270f" %}
 
 package:
   name: {{ name|lower }}

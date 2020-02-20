@@ -11,7 +11,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 0
+  number: 1
   skip: True  # [py<36]
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
@@ -44,7 +44,7 @@ requirements:
     - future
     - packaging
     - jupyter
-    - matplotlib
+    - matplotlib-base
 
 test:
   imports:

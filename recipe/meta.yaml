@@ -1,6 +1,6 @@
 {% set name = "pywr" %}
-{% set version = "1.5.0" %}
-{% set sha256 = "90e14e85f8255f710cfad0ec188c264fe55a066b9cf7f1e47d993db9d8e75155" %}
+{% set version = "1.6.0" %}
+{% set sha256 = "4cbe6d5713f0a53d918078328ce101587028cd56120c63e446a39bbccdc2a962" %}
 
 package:
   name: {{ name|lower }}
@@ -11,8 +11,8 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 1
-  skip: True  # [py<36]
+  number: 0
+  skip: true  # [py<36]
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
@@ -56,7 +56,7 @@ about:
   license: GPL-3.0
   license_family: GPL
   license_file: LICENSE.txt
-  summary: 'Pywr is a generalised network resource allocation model written in Python'
+  summary: Pywr is a generalised network resource allocation model written in Python
   description: |
     Pywr is a tool for solving network resource allocation problems at
     discrete timesteps using a linear programming approach. It's principal

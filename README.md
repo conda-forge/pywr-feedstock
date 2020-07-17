@@ -5,7 +5,7 @@ Home: http://github.com/pywr/pywr
 
 Package license: GPL-3.0-or-later
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: Pywr is a generalised network resource allocation model written in Python
 

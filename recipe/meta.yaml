@@ -1,6 +1,6 @@
 {% set name = "pywr" %}
-{% set version = "1.9.0" %}
-{% set sha256 = "2aaee0ceeb6af3b5dfd05905c8f2ace2c53fe492feba81198f0bd3b15ca83d97" %}
+{% set version = "1.10.0" %}
+{% set sha256 = "f0e5c2d62c2fbc009ce564a9e597d641267d2ab3a2a8bfb59f0bb47840ea8958" %}
 
 package:
   name: {{ name|lower }}
@@ -11,7 +11,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 1
+  number: 0
   skip: true  # [py<36]
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 

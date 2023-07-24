@@ -21,7 +21,7 @@ requirements:
     - pip
     - {{ compiler('c') }}
     - numpy
-    - cython
+    - cython<3
     - packaging
     - glpk
     - lp_solve

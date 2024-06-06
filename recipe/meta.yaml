@@ -1,6 +1,6 @@
 {% set name = "pywr" %}
-{% set version = "1.23.0" %}
-{% set sha256 = "9e05bd9f2f0c55a09b6d96eb01f69584b796fd4539388fae291f3f05875d36e6" %}
+{% set version = "1.24.0" %}
+{% set sha256 = "1248f884e11fab38491381f574d8836426c3f3fd8500f8b03e0b72fed169484b" %}
 
 package:
   name: {{ name|lower }}
@@ -21,7 +21,7 @@ requirements:
     - pip
     - {{ compiler('c') }}
     - numpy
-    - cython <3
+    - cython
     - packaging
     - glpk
     - lp_solve

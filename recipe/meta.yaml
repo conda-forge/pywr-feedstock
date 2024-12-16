@@ -1,13 +1,13 @@
 {% set name = "pywr" %}
-{% set version = "1.26.0" %}
-{% set sha256 = "6ab68d796bdfe2c8b3e1408cf2a0863b3134b01223425751b992ca38ca8ab230" %}
+{% set version = "1.27.2" %}
+{% set sha256 = "168a4ee275b246d5eb84c597695462d8e33062bb33ae8ed14e835969c517cdb6" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: {{ sha256 }}
 
 build:

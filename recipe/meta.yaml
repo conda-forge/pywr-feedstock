@@ -1,6 +1,6 @@
 {% set name = "pywr" %}
-{% set version = "1.29.0" %}
-{% set sha256 = "a00bd7efca319bbb715121c2b110446af34802ae4ac9707701ff4f35248e9bb7" %}
+{% set version = "1.30.0" %}
+{% set sha256 = "f7cca3851132980415cdf441a204846e6b67527f73761fa06102cad67c5e8205" %}
 
 package:
   name: {{ name|lower }}
@@ -11,7 +11,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 1
+  number: 0
   skip: true  # [py<310]
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
@@ -31,7 +31,7 @@ requirements:
     - setuptools_scm
   run:
     - python
-    - pandas
+    - pandas <3
     - networkx
     - glpk
     - lp_solve
